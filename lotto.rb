@@ -13,6 +13,12 @@ class Lotto
   end
 
   def display_ticket
+    # @ticket.sort
+    @ticket.display
+  end
+
+  def display_reverse_ticket
+    @ticket.reverse
     @ticket.display
   end
 end
@@ -21,3 +27,6 @@ lotto_sim = Lotto.new
 
 puts "Your ticket is......"
 lotto_sim.display_ticket
+
+puts "Do the hokey pokey....."
+lotto_sim.display_reverse_ticket
